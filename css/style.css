@@ -1,0 +1,121 @@
+:root {
+	--primary-color: #062863;
+	--primary-color-light: #083e9e;
+	--primary-color-lighter: #1f50a7;
+	--secondary-color: #4a5568;
+	--secondary-color-light: #9fa3aa;
+	--white: #fff;
+	--almost-white: #edf2f7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Sen', sans-serif;
+	font-size: 1.3rem;
+	overflow-x: hidden;
+	background-color: var(--primary-color);
+}
+
+header img {
+	margin: 4.4rem 0;
+	width: 17rem;
+}
+
+main {
+	margin: 0 2%;
+}
+
+/* utility classes */
+.text-center {
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	padding: 0 4rem;
+	max-width: 44rem;
+	background-color: var(--white);
+	border-radius: 2rem 2rem 2rem 0;
+}
+form .form-info {
+	padding: 3.5rem 0;
+}
+
+.form-info > p {
+	padding: 0.2rem;
+	color: var(--secondary-color);
+}
+
+form h2 {
+   font-size: 2.2rem;
+	color: var(--primary-color-lighter);
+}
+form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.6rem;
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+}
+
+form input{
+	height: 4.8rem;
+	width: 100%;
+	padding: 0 0.7rem;
+	background-color: var(--almost-white);
+	font-family: inherit;
+	border: none;
+	border-radius: 0.3rem;
+}
+
+.form-control {
+	margin-bottom: 3rem;
+}
+
+input[type='submit'] {
+	margin-bottom: 3rem;
+	background-color: var(--primary-color-light);
+	color: var(--white);
+	font-weight: bold;
+	height: 5rem;
+	border-radius: 1rem 1rem 1rem 0;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in;
+}
+
+input[type='submit']:hover {
+	background-color: var(--primary-color);
+}
+
+
+footer a {
+   display: inline-block;
+   margin: 1.2rem 0;
+	text-decoration: none;
+	color: var(--white);
+}
+
+footer a:hover {
+	color: var(--secondary-color-light);
+}
+
+@media only screen and (min-width: 900px) {
+	body {
+		background-image: url('../img/circle.png'),
+			url('../img/Inverted\ J.png'), url('../img/J.png'),
+			url('../img/angle\ bracket.png');
+		background-position: -1% -15%, 108% -1%, -5% 108%, 107% 105%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 21rem 21rem;
+	}
+}
